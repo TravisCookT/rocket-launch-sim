@@ -35,9 +35,9 @@ class Rocket:
         self.x_vel = 0
         self.y_vel = 0
     def draw(self, win):
-        x = self.x * 10 + WIDTH/2
-        y = self.y * 10 + HEIGHT/2
-        pygame.draw.polygon(win, self.color, [10,10,10]) # rocket FIX ME
+        x = self.x * 1 + WIDTH/2
+        y = self.y * 5 + HEIGHT/2
+        pygame.draw.rect(win, self.color, pygame.Rect(390,748,20,50),2) # rocket FIX ME
 
 def main():
     run = True
